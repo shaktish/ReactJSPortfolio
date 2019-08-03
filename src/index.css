@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700&display=swap');
+
+html { font-size: 62.5%; } 
+
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+  background-color: #fff; 
+  font-weight: 400;
+  font-size: 14px; 
+  font-size: 1.4em;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; } 
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Exo 2', sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem; 
+  color:#323232;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.small {
+  font-size: 12px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+
+.App {
+  margin:0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.input {
+  border: 1px solid #eeeeee;
+  padding: .8rem 1.2rem;
+  outline: none;
+}
+
+
+.search.input {
+  border-right:none;
+}
+
+
+.search.input:focus {
+
+}
+
+button, 
+.button {
+  font-family: 'Exo 2', sans-serif;
+  cursor:pointer;
+  padding: .8rem 1.2rem;
+  transition: all .15s ease-in-out;    
+  outline: none;
+  border-radius:3px;
+}
+
+.button.gray {
+  background: #eeeeee;
+  color: #323232;
+  border: 1px solid #eeeeee;
+}
+
+.button.gray:hover {
+  background: #84ba3f;
+  color:#fff;
+}
+
+.button.gray:active {
+  background: #545b62;
+  color:#fff;
+}
+
+.button.button-border {
+  background: transparent;
+  border: 2px solid #323232;
+  color: #323232;
+}
+
+
+.button.button-border.black:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color:white;
+}
+
+.fweight300 {
+  font-weight: 300;
+}
+
+.fweight500 {
+  font-weight: 500;
+}
+
+.fweight600 {
+  font-weight: 600;
+}
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 0.0625rem solid rgba(0, 0, 0, 0.1);
+  height: 1px;
+}
+section,
+.section {
+  margin-bottom:3rem;
+}
+
+.d-flex {
+  display:flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.mb-0 {
+  margin-bottom: 0px !important;  
+}
+
+.mt-10  {
+  margin-top:10px !important;
+}
+
+.mb-10  {
+  margin-bottom:10px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;  
+}
+
+.mt-30 {
+  margin-top: 30px !important;  
+}
+
+
+.mt-15 {
+  margin-top: 15px !important;  
+}
+
+.mt-20 {
+  margin-top: 20px !important;  
+}
+
+.mt-60 {
+  margin-top: 30px !important;  
+}
+
+.shadow {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(87deg, #f4f5f7 0, #f4f4f7 100%) !important;
+}
+
+.card {
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-responsive {
+  width:100%;
+  max-width: 100%;
+}
+
+.Bio.section  {
+  max-width: 700px;
+  margin:0 auto;
+}
+
+.link-block {
+  display:inline-block;
+}
+
+
+@media screen and (min-width:768px) {
+  body { 
+    font-size: 1.8rem; 
+  } 
+
+  .button.button-border.black:hover {
+    background: #323232;
+    color: #ffffff;
+    border-color: #323232;
+  }
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 2rem; }
+  h4 { font-size: 1.6rem; }
+  h5 { font-size: 1.4rem; }
+  h6 { font-size: 1.2rem; } 
+  
+}
+
+

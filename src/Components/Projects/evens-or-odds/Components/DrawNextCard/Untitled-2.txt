@@ -1,0 +1,51 @@
+#1
+
+App Component
+- H2 Evens or Odds
+- h3 A new game awaits
+- button Start game 
+
+Instruction Component
+- H2 Instructions
+- P
+- button   
+
+Notes
+1. Expand the Instructions and collapse them
+2. Start the game 
+
+#2 After clicking on Start game
+
+-h2 Evens or Odds
+-h3 The game is on 
+-h3 Records : 5
+-p  52 cards remaning
+-p 0 Correct guesse
+
+
+
+-h3 Will it be even or odd ?
+-button Even | Odds
+-button Draw the next card!
+
+-hr
+-button Cancel Game
+
+onClick of DrawNextCard
+
+
+1.
+- Draw/Fetch Single Card details - Store it in state
+- Show it in UI
+    - remaning
+    - Card Name
+    - Card image
+
+- Check if user chosen and card that drew are same. 
+    - If same Add +1 for Guess score
+
+
+2. Even or Odd do it with active state 
+- Store which mode is on
+
+3. Store New Record 
