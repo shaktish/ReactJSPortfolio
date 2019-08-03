@@ -13,3 +13,30 @@
     color:inherit;
 }
 
+.links-wrap {
+    display:flex;
+    justify-content:space-between;
+}
+
+.card-image {
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:768px) {
+    .links-wrap {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }       
+}
+
+
+@media only screen and (min-width:1024px) {
+    .links-wrap {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }       
+}

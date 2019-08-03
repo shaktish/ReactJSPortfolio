@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700&display=swap');
 
-html { font-size: 62.5%; } 
+html { font-size: 62.5%; height:100% } 
 
 body {
   margin: 0;
@@ -9,10 +9,14 @@ body {
   line-height: 1.5;
   color: #000;
   text-align: left;
-  background-color: #fff; 
+  /* background-color: #fff;  */
   font-weight: 400;
   font-size: 14px; 
   font-size: 1.4em;
+
+  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background-attachment: fixed; */
 }
 
 code {
@@ -52,6 +56,7 @@ ul, li {
   margin:0 auto;
   max-width: 1200px;
   text-align: center;
+  padding:0 10px;
 }
 
 .input {
@@ -63,11 +68,6 @@ ul, li {
 
 .search.input {
   border-right:none;
-}
-
-
-.search.input:focus {
-
 }
 
 button, 
@@ -84,6 +84,10 @@ button,
   background: #eeeeee;
   color: #323232;
   border: 1px solid #eeeeee;
+
+  /* background: #607D8B;
+  color:#fff;
+  border:none; */
 }
 
 .button.gray:hover {
@@ -184,11 +188,12 @@ section,
 }
 
 .card {
-  border-radius: 0;
+  border-radius: 20px;
   border: 0;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255,255,255,0.5);
 }
 
 .img-responsive {
@@ -199,6 +204,7 @@ section,
 .Bio.section  {
   max-width: 700px;
   margin:0 auto;
+  padding:0 10px;
 }
 
 .link-block {

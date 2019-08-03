@@ -19,6 +19,7 @@
     height: 250px;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
     
 }
 
@@ -35,6 +36,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 
 }
 

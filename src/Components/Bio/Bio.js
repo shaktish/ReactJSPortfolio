@@ -5,7 +5,7 @@ const Bio = () => {
     return (
         <section className={'Bio section mt-30'}>
             {expandBio ?
-             <p className="mb-10">I have been into Web Application Development & Cross-Platform Mobile. I would like to deliver the consumer a unique and enjoyable experience with the latest stack. <br/> (Preferably React JS)
+             <p className="mb-10">I have been into Web Application Development & Cross-Platform Mobile. I would like to deliver the consumer a unique and enjoyable experience with the latest stack. <br/> ( Preferably React Js )
              </p>  
              :  
              <p className="mb-10">I  have been into Web Application Development & Cross-Platform Mobile... </p> }
