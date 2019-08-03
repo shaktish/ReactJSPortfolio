@@ -13,12 +13,9 @@ const MessagesReaction = ({messageReaction}) => {
             return (
                 <div key={id}>
                     <span>{username}</span>
-                    <span> {emoji}</span>
-                    
+                    <span> {emoji}</span>                    
                     {i === messageReaction.length - 1 ? null : <span>, &nbsp;</span>}
-                </div>
-                
-                
+                </div>                                
             )
         })
     )
@@ -30,10 +27,9 @@ const MessageBoard = (props) => {
     return (
         <div style={{marginTop:'20px'}}>
             {props.MessageReducer.items.length > 0 ? <h2>Messages</h2> : null }
-            {props.MessageReducer.items.map(( item )=>{
+            {props.MessageReducer.items.reverse().map(( item )=>{
                 
                 const {text, id, timestamp, username} = item;
-                console.log(timestamp)
                 return (
                     <div key={id} style={{marginBottom:'30px'}}>
                         <p>{text}</p>                     
@@ -41,9 +37,9 @@ const MessageBoard = (props) => {
                             <p className="mb-0">- {username}</p>                        
                         </div>
                         <p className="small" style={{marginLeft:'10px'}}>{new Date(timestamp).toLocaleString()}</p>
-                        <hr />
+                        <hr className="mb-10" />
                         <CreateReaction messageId = {id}/>
-                        <div style={{display:'flex', justifyContent: 'center', marginTop:10}}>
+                        <div style={{display:'flex', justifyContent: 'center', marginTop:10, flexWrap:'wrap'}}>
                             <MessagesReaction messageReaction={props.ReactionReducer[id]} />                            
                         </div>
                     </div>

@@ -87,11 +87,13 @@ class Navbar extends React.Component {
     render () {        
         return (
             <div className="Navbar-block">
-                <div className="burger-wrap" onClick={this.NavtoggleHandler}>
+                {this.state.toggle ? <div onClick={this.NavtoggleHandler} className="CloseWrap"> <div className="close" ></div> </div>  : <div className="burger-wrap" onClick={this.NavtoggleHandler}>
                     <div></div>
                     <div></div>
                     <div></div>
-                </div>
+                </div> }
+                
+                
                 {this.NavbarView()}                             
             </div>
         );

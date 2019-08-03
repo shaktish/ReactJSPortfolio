@@ -4,11 +4,12 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom:20px;
+    align-items: flex-end;
 }
 .Navbar {
     display:flex;
     justify-content: center;
-    margin:0  0 20px 0;
+    margin:0  0 0px 0;
     flex-direction: column;
     width:100%;
 }
@@ -24,6 +25,7 @@
     font-size: 16px;
     display: block;
     padding:10px;
+    text-align: left;
 }
 
 .Navbar a.active {
@@ -31,19 +33,52 @@
     font-weight: 600;
 }
 .burger-wrap {
-    margin: 20px auto;
+    margin: 20px;
 }
 
 .burger-wrap div {
-    width: 35px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     background-color: black;
     margin: 6px 0;
+    opacity: 0.3;
 }
 
+.burger-wrap:hover div {
+    opacity: 1;
+}
+
+.CloseWrap {
+    position: relative;
+    margin: 20px;
+}
+.close {
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  
 
 @media only screen and (min-width:768px) {
-    .burger-wrap div {
+    .burger-wrap div,
+    .CloseWrap {
         display:none;
     }
 
@@ -64,6 +99,7 @@
     .Navbar-block {
         margin-bottom:0;
         margin-top:20px;
+        align-items: center;
     }
 }
 
