@@ -12,14 +12,14 @@ const correctGuessRecordKey = 'CORREC_GUESS_RECORD_KEY';
 const checkRecord = (correctGuesses) => {
     
     const record = Number(localStorage.getItem(correctGuessRecordKey)); 
-    console.log(record, 'record')
-    console.log(correctGuesses, 'correctGuesses')
+    //console.log(record, 'record')
+    //console.log(correctGuesses, 'correctGuesses')
     if(correctGuesses >= record ) {
         localStorage.setItem(correctGuessRecordKey, correctGuesses );
-        console.log('New record')
+        //console.log('New record')
         return {record : correctGuesses, isNewRecord : true}
     } else {
-        console.log('else part')
+        //console.log('else part')
         return {record, isNewRecord : false}
     }
 }
@@ -72,7 +72,7 @@ class DrawNextCard extends React.Component {
         }
 
         let {record, isNewRecord} = checkRecord(this.props.GameStateReducerHelper.score)
-        console.log(isNewRecord);
+        //console.log(isNewRecord);
 
         const remaningCards = this.props.DeckOfCardsReducerHelper.remaining;
 
@@ -97,8 +97,7 @@ class DrawNextCard extends React.Component {
                 {card}
                 <button className="button button-border black fweight600" disabled={this.props.DeckOfCardsReducerHelper.btnDisabled} onClick={(e)=>{this.DrawNextCardHandler()}}> {this.props.DeckOfCardsReducerHelper.remaining <= 51 ? 'Draw the next card' : 'Draw the card' }</button>
                 <br />
-                <br />
-                <button className="button gray" onClick={this.ResetScore}>Reset Score</button>
+                {/* <button className="button gray" onClick={this.ResetScore}>Reset Score</button> */}
                 </>  : null }     
                
             </div>

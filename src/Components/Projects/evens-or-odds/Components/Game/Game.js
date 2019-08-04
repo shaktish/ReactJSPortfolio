@@ -21,8 +21,8 @@ class Game extends React.Component {
         this.props.stopGameHelper();
     }
     render() {
-        console.log(this.props.DeckOfCardsHelper)
-        // console.log(this.props, 'PROPS FROM GAME.JS');
+        //console.log(this.props.DeckOfCardsHelper)
+        console.log(this.props, 'PROPS FROM GAME.JS');
 
         let gameContent;
 
@@ -31,12 +31,21 @@ class Game extends React.Component {
                 <section>
                     <p className={'mb-10'}>The Game is ON!</p>                        
                     <DrawNextCard />
-                    <hr />                             
-                    <button  
-                        className="button gray"
-                        onClick={this.stopGameHandler}> 
-                        {this.props.DeckOfCardsHelper.remaining === 0 ? 'Play again' : 'Cancel Game' } 
-                    </button>
+                    <hr />          
+                    <div style={{display:'flex', justifyContent:'center'}}>
+                        <button  
+                            className="button gray"
+                            style={{marginRight:'15px'}}
+                            onClick={this.props.ResetScoreHelper}> 
+                            Reset Score
+                        </button>
+
+                        <button  
+                            className="button gray"
+                            onClick={this.stopGameHandler}> 
+                            {this.props.DeckOfCardsHelper.remaining === 0 ? 'Play again' : 'Cancel Game' } 
+                        </button>
+                    </div>                   
                 </section>
              </React.Fragment>
         } else {
