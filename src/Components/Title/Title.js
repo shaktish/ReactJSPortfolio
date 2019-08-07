@@ -1,7 +1,7 @@
 import React from 'react';
 import './Title.css';
 
-const TITLES = ['a UI Developer', 'an Enthusiastic Learner', 'a Gamer'];
+const TITLES = ['UI Developer', 'Enthusiastic Learner', 'Gamer'];
 
 class Title extends React.Component {
     state = {
@@ -39,7 +39,7 @@ class Title extends React.Component {
     render (){
         return (
             <div className="mt-60">
-                <p className={this.state.fadeIn ? 'fade-in' : 'fade-out'}>I'm {TITLES[this.state.titleIndex]}</p>
+                <p className={this.state.fadeIn ? 'fade-in' : 'fade-out'}> {TITLES[this.state.titleIndex]}</p>
             </div>
         )
     }

@@ -5,10 +5,12 @@ const Bio = () => {
     return (
         <section className={'Bio section mt-30'}>
             {expandBio ?
-             <p className="mb-10">I have been into Web Application Development & Cross-Platform Mobile. I would like to deliver the consumer a unique and enjoyable experience with the latest stack. <br/> ( Preferably React Js )
+             <p className="mb-10">I have been into Web Application & Cross-Platform Mobile Development . I would like to deliver the consumer a unique and enjoyable experience with the latest stack. <br/> ( Preferably React Js )
              </p>  
              :  
-             <p className="mb-10">I  have been into Web Application Development & Cross-Platform Mobile... </p> }
+             <p className="mb-10">I have been into Web Application & Cross-Platform Mobile Development... </p> }
+
+             
             
             <button className={'button gray mt-10'} onClick={()=>{expandHandler(!expandBio)}}>{expandBio ? 'Show less' : 'Read more' }</button>
         </section>

@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700&display=swap');
 
-body, html {
+/* body, html {
   min-height: 100%;
   height: 100%;
   width: 100%;
   margin:0; 
   display:block;
   min-height: 100%;
-}
+} */
 
-html { font-size: 62.5%; background: #d7fffe; } 
+html {
+  font-size: 62.5%;
+  height: 100%;
+  background: #d7fffe; 
+} 
 
 body {
   margin: 0;
@@ -22,24 +26,11 @@ body {
   font-weight: 400;
   font-size: 14px; 
   font-size: 1.4em;
-
-  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); */
-
-
-  background: #fffeff; /* Old browsers */
-  background: -moz-linear-gradient(top, #fffeff 0%, #d7fffe 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #fffeff 0%,#d7fffe 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #fffeff 0%,#d7fffe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffeff', endColorstr='#d7fffe',GradientType=0 );
-
-
-  background: -webkit-linear-gradient(top, #fffeff 0%,#d7fffe 100%);
-
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
   
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background: linear-gradient(180deg, #FFFEFF 0%, #D7FFFE 100%);
 }
 
 code {

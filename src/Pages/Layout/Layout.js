@@ -6,7 +6,7 @@ const Layout = (props) => {
     return (
         <div className="section">
             <Navbar />
-            {props.children}
+            {props.children}            
         </div>
     )
 

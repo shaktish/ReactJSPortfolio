@@ -27,7 +27,7 @@ const MessageBoard = (props) => {
     return (
         <div style={{marginTop:'20px'}}>
             {props.MessageReducer.items.length > 0 ? <h2>Messages</h2> : null }
-            {props.MessageReducer.items.reverse().map(( item )=>{
+            {props.MessageReducer.items.map(( item )=>{
                 
                 const {text, id, timestamp, username} = item;
                 return (

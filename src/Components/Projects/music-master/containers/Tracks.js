@@ -3,21 +3,18 @@ import classes from '../containers/Tracks.module.css'
 
 class Tracks extends React.Component {
 
-    state = { 
-        
-        
+    state = {             
         url : null,
         defaultAudio : null,
         MusicIsPlaying : false,
         MusicIsPaused : false,
-        NewMusic : false
-        
+        NewMusic : false        
     }
 
 
     audioHandler = (url) => {
         
-        
+                
         if(!url) {
             return null
         }
@@ -34,21 +31,50 @@ class Tracks extends React.Component {
                 })
             });
         } else if(this.state.MusicIsPlaying === true && this.state.url === url) {
-            //console.log('case 2')             
+            console.log('case 2')             
             this.state.defaultAudio.pause();
             this.setState({
                 MusicIsPlaying: false,
                 MusicIsPaused : true
             })
-        } else if (this.state.MusicIsPlaying === false && this.state.MusicIsPaused === true) {
-            // console.log('case 3 ')
+        } else if (this.state.MusicIsPlaying === false && this.state.MusicIsPaused === true && this.state.url !== url) {
+            console.log('case 3 ')
+            this.setState({
+                defaultAudio : new Audio(url)
+            }, () => {
+                this.state.defaultAudio.play();
+                this.setState({
+                    MusicIsPlaying : true,
+                    url
+                })
+            });
+
+            
+            // this.state.defaultAudio.play();
+            // this.setState({
+            //     MusicIsPlaying: true,
+            //     MusicIsPaused : true
+            // })
+        } else if (this.state.MusicIsPlaying === false && this.state.MusicIsPaused === true && this.state.url === url) {
+            console.log('case 4 ')
+            // this.setState({
+            //     defaultAudio : new Audio(url)
+            // }, () => {
+            //     this.state.defaultAudio.play();
+            //     this.setState({
+            //         MusicIsPlaying : true,
+            //         url
+            //     })
+            // });
+
+            
             this.state.defaultAudio.play();
             this.setState({
                 MusicIsPlaying: true,
                 MusicIsPaused : true
             })
         } else if (this.state.url !== url ) {
-            //console.log('case 4')
+            console.log('case 5')
             this.state.defaultAudio.pause();
                     
             this.setState({
@@ -101,7 +127,7 @@ class Tracks extends React.Component {
             })
         }
 
-        //console.log(this.state, '\n state ')
+        // console.log(this.state, '\n state ')
         //console.log(this.props, '\n props ')
         return (
             <div className={classes.RenderTracksWrapper}>
