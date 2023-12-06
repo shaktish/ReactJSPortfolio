@@ -10,7 +10,7 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "pubnub": "^4.24.3",
+    "pubnub": "^7.4.0",
     "uuid": "^3.3.2"
   },
   "scripts": {
